@@ -8,6 +8,7 @@ import (
 )
 
 //To avoid memory leaks we always have to terminate our go routines
+//If a goroutine is responsible for creating a goroutine, it is also responsible for ensuring it can stop the goroutine
 
 func UnblockingRoutine() {
 
